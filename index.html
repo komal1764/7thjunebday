@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>MM by Komal</title>
+	<style>
+		*{font-size:50px;font-family:"Felix Titling";}
+		body{background-color:lightpink;}
+	</style>
+</head>
+
+<body>
+<center>
+	<h1>Motivational Msg Wallah</h1>
+	<h2 id="msg"/>
+	
+	
+	<script>
+	 function show()
+	{
+		
+		let msg =document.getElementById("msg");
+		
+		let messages = ["m1","m2","m3","m4","m5","m6","m7","m8","m9"];
+		let r = parseInt(Math.random()*messages.length);
+		msg.innerHTML= messages[r];
+	}
+
+    
+   	 show();
+
+    
+   	 setInterval(show, 5000);
+	</script>
+</center>
+</body>
+</html>
